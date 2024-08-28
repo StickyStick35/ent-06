@@ -1,18 +1,18 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/connection');
-const Product = sequelize.define('product', {
-  title: {
+
+const ProductImg = sequelize.define('productImg', {
+  url: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  description: {
+  filename: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  price: {
-    type: DataTypes.DECIMAL,
-    allowNull: false
-  },
-  //categoryId
+  //productId
+
+}, {
+  timestamps: false
 });
-module.exports = Product;
+module.exports = ProductImg;
