@@ -3,7 +3,8 @@ const Category = require("./Category")
 const Product = require("./Product")
 const ProductImg = require("./ProductImg")
 const Purchase = require("./Purchase")
-const User = require("./User")
+const Cart = require("./Cart")
+
 
 // Product --> categoryId
 Product.belongsTo(Category)
